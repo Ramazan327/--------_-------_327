@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    text-decoration: none;
+    transition: .4s;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(255,255, 255);
+ height: 100%; 
+ margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ height: 100vh;
+ box-sizing: border-box;
+ background-color: rgb(0, 0, 0);
+}
+
+
+
+.admin_win {
+ height: 100vh;
+ background-color: #28553F;
+ width:25%;
+ padding:50px;
+
+}
+
+.block_content {
+ height: 100vh;
+ width:75%;
+}
+
+.admin_win h2 {
+    color: white;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+ text-align:center;
+ margin-top:20px;
+   
+}
+
+
+.adm_icon {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.icoons {
+    padding-top: 50px;
+}
+
+.icoons a {
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+.admin_exit {
+ position: absolute;
+ bottom: 40px;
+}
+
+.admin_item a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.563);
+}
+
+.admin_items h1 {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 30px;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+
+.welcome {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.825);
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
+
+}
+
+
+.admin_item {
+   overflow: hidden;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgba(217, 217, 217, 0.10);
+   margin-bottom: 28px;
+   padding: 20px ;
+   width: 100%;
+   gap: 136px;
+
+}
+
+.admin_item p {
+    color: white;
+    font-size: 20px;
+}
+
+.admin_item a {
+    color: white;
+    font-size: 20px;
+    
+}
+
+.pagin {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.pagin a{
+    font-size: 16px;
+    color: white;
+}
+
+.Close {
+    display: none;
+}
+
+.pencil {
+    display: none;
+}
+
+
+
+
+@media (max-width:400px) {
+
+    .icoons .adm_icon {
+        display: none;
+    }
+
+    .admin_win {
+        width: 400px;
+        padding: 0;
+        height: 120px;
+    }
+
+    .icoons {
+        padding: 0;
+    }
+
+    .admin {
+        display: block;
+    }
+
+    .admin_content img {
+        width: 150px;
+        height: 60px;
+    }
+
+    .admin_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 20px 50px 20px;
+    }
+
+    .admin_items h1 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .admin_items h2 {
+        font-size: 20px;
+        padding: 0 20px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    
+
+    .admin_content .burger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+
+    .admin_win {
+        height: 150px;
+        background-color: black;
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+    
+    .admin_item {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(217, 217, 217, 0.10);
+        margin-bottom: 28px;
+        padding: 20px;
+        width: 100%;
+        gap: 36px;
+     
+     }
+
+     .nmb {
+        display: none;
+     }
+
+     .admin_item p {
+        font-size: 14px;
+        text-align: center;
+     }
+
+     .block_content {
+        height: 100vh;
+        width:100%;
+    }
+
+    .Close {
+        display: block;
+    }
+
+    .pencil {
+        display: block;
+    }
+
+    .ic {
+        display: none;
+    }
+}

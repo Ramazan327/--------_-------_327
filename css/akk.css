@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    text-decoration: none;
+    transition: .4s;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 600;
+}
+
+header {
+    background-color: black;
+
+    position: relative;
+    z-index: 0;
+}
+
+.burger {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header .icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.header .icons {
+    display: flex;
+    gap: 14px;
+}
+
+.header .icons img:hover {
+    transform: scale(1.1);
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+
+}
+
+.nav {
+    display: flex;
+    gap: 90px;
+}
+
+.nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #ffffff;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+
+.akk {
+    padding: 100px 0;
+}
+
+.akk h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.akk_el {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.akk_el img {
+    width: 225px;
+    height: 225px;
+}
+
+.akk_el h3 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.akk_el h5 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.akk_el p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.akk_btn button {
+    padding: 24px 80px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.tovars h1 {
+    font-size: 36px;
+}
+
+.pop_tov_item {
+    background-color: white;
+    padding: 15px 18px;
+    box-shadow: 0px 4px 25px -2px rgba(0, 0, 0, 0.25);
+
+}
+
+.pop_tov_item img {
+    margin-bottom: 25px;
+}
+
+.pop_tov_item .tov_name {
+    color: #28553F;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pop_tov_item .tov_opis {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.tov_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tov_price .tov_price_1 {
+    color: #28553F;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tov_price .tov_price_2 {
+    color: #949981;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+
+.pop_tov_item button {
+    background-color: #28553F;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 77px;
+    border: none;
+}
+
+.pop_tov_item button:hover {
+    background-color: #5F8E77;
+}
+
+.pop_tov_items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+footer {
+    background-color: black;
+    padding: 40px 0 135px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer_nav p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer_nav .nav {
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.pop_tov_item button {
+    border: none;
+}
+
+.tovars_btn button {
+    padding: 25px 42px;
+    background-color: #28553F;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+}
+
+.tovars_btn button:hover {
+    background-color: #5F8E77;
+}
+
+
+
+
+.footer_nav .nav a {
+    font-size: 16px;
+    color: rgb(178, 178, 178);
+}
+
+.footer_akk p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.akk_img {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer_logo:hover {
+    transform: scale(1.05);
+}
+
+.akk_img img:hover {
+    transform: scale(1.1);
+}
+
+.footer_contacts p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer_contacts a {
+    font-size: 16px;
+    color: rgb(178, 178, 178);
+}
+
+
+@media (max-width:400px) {
+    .logo img {
+        width: 185px;
+    }
+
+    .container {
+        max-width: 360px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .icons img {
+        display: none;
+    }
+
+    .akk h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .akk_el {
+        gap: 18px;
+        margin-bottom: 40px;
+    }
+
+    .akk_el img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .akk_el h3 {
+        font-size: 24px;
+    }
+
+    .akk_el h5 {
+        font-size: 16px;
+    }
+
+    .akk_el p {
+        font-size: 12px;
+    }
+
+    .akk_btn button {
+        font-size: 14px;
+        width: 180px;
+        padding: 13px 63px;
+    }
+
+    .tovars h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .pop_tov_items {
+        flex-direction: column;
+        gap: 35px;
+        width: 282px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .footer_nav {
+        order: 1;
+    }
+
+    .footer_logo {
+        width: 112px;
+    }
+
+    .footer_akk p {
+        font-size: 14px;
+    }
+
+    .footer_contacts p {
+        font-size: 14px;
+    }
+
+    .footer_contacts .cont p {
+        font-size: 13px;
+    }
+
+    .footer_contacts .cont a {
+        font-size: 13px;
+    }
+
+    .footer_nav p {
+        font-size: 14px;
+    }
+
+    .footer_nav .nav a {
+        font-size: 13px;
+    }
+
+}
